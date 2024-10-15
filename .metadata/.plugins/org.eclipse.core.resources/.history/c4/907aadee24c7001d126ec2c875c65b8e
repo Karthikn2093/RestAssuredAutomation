@@ -1,0 +1,46 @@
+package libraryAPIProject;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+import files.PayLoadLibrary;
+
+
+
+public class Library {
+	
+	@Test
+	public void addBook() {
+		
+		RestAssured.baseURI = "http://216.10.245.166";
+		String response = given().log().all().header("Content-Type","application/json")
+		.body(PayLoadLibrary.addBook()).when().post("/Library/Addbook.php")
+		.then().log().all().assertThat().statusCode(200)
+		.extract().response().asString();
+		
+		JsonPath js = ReUsableMethods.rawToJson(response);
+		String bookID= js.get("ID");
+		
+		System.out.println(bookID);
+		
+	}
+	
+	@Test
+	public void getBook() {
+		
+		RestAssured.baseURI = "http://216.10.245.166";
+		String book = given().log().all().queryParam("AuthorName", "Karthik Test Automation")
+		.when().get("/Library/GetBook.php?").then().assertThat().log().all()
+		.statusCode(200).extract().response().asString();
+		
+		JsonPath js1 = ReUsableMethods.rawToJson(book);
+		String bookName = js1.get("Name");
+		System.out.println(bookName);
+	}
+
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-20T21:44:36 IST" name="Default suite" finished-at="2023-03-20T21:44:38 IST" duration-ms="2475">
+    <groups>
+    </groups>
+    <test started-at="2023-03-20T21:44:36 IST" name="Default test" finished-at="2023-03-20T21:44:38 IST" duration-ms="2475">
+      <class name="libraryAPIProject.Library">
+        <test-method signature="addBook(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:libraryAPIProject.Library@31368b99]" started-at="2023-03-20T21:44:36 IST" name="addBook" data-provider="BooksData" finished-at="2023-03-20T21:44:38 IST" duration-ms="2141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ISBN-72UI721]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2FA76]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Karthik Test Automation Practice API 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method signature="addBook(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:libraryAPIProject.Library@31368b99]" started-at="2023-03-20T21:44:38 IST" name="addBook" data-provider="BooksData" finished-at="2023-03-20T21:44:38 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ISBN-62281]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2FA3512]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Karthik Test Automation Practice API 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method signature="addBook(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:libraryAPIProject.Library@31368b99]" started-at="2023-03-20T21:44:38 IST" name="addBook" data-provider="BooksData" finished-at="2023-03-20T21:44:38 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ISBN-216319]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2FA26123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Karthik Test Automation Practice API 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+      </class> <!-- libraryAPIProject.Library -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

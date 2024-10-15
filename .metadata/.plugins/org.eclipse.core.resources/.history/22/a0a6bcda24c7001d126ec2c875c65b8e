@@ -1,0 +1,18 @@
+package files;
+
+public class PayLoadLibrary {
+	
+	public static String addBook() {
+		
+		return "{\r\n"
+				+ "\r\n"
+				+ "\"name\":\"Learn Appium Automation with Java Automation Test Practice\",\r\n"
+				+ "\"isbn\":\"ISBN-215637\",\r\n"
+				+ "\"aisle\":\"5A2\",\r\n"
+				+ "\"author\":\"Karthik\"\r\n"
+				+ "}\r\n"
+				+ "";
+		
+	}
+
+}
